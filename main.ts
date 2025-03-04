@@ -1,13 +1,13 @@
 let DIRECCION = 0
 basic.forever(function () {
     DIRECCION = input.compassHeading()
-    if (DIRECCION > 337.5 && DIRECCION < 22.5) {
+    if (DIRECCION > 330 || DIRECCION < 30) {
         basic.showString("N")
-    } else if (DIRECCION > 67.5 && DIRECCION < 112.5) {
+    } else if (DIRECCION > 31 && DIRECCION < 150) {
         basic.showString("E")
-    } else if (DIRECCION > 202.5 || DIRECCION < 157.5) {
+    } else if (DIRECCION > 151 && DIRECCION < 240) {
         basic.showString("S")
-    } else if (DIRECCION > 247.5 || DIRECCION < 292.5) {
+    } else if (DIRECCION > 241 && DIRECCION < 329) {
         basic.showString("O")
     } else {
         basic.clearScreen()
